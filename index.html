@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ====== Favicon ====== -->
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <!-- ====== Bootstrp css link  ====== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- ====== fontawesome cdn  ====== -->
+    <script
+      src="https://kit.fontawesome.com/2298c35404.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ====== Swiper CSS ====== -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- ====== Custom CSS ====== -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Fashion Shop</title>
+  </head>
+  <body>
+    <!-- ====== Header ====== -->
+    <header class="header">
+      <nav class="navbar navbar-expand-md">
+        <div class="container-fluid container-md">
+          <a class="navbar-brand" href="#">
+            <img src="./images/logo.svg" alt="LOGO" class="img-fluid" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+          >
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+          <div class="offcanvas offcanvas-end" id="offcanvasNavbar">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                <img src="./images/logo.svg" alt="LOGO" class="img-fluid" />
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div
+              class="offcanvas-body d-block d-md-flex align-item-center justify-content-between"
+            >
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item mb-3 mb-lg-0">
+                  <a class="nav-link active" href="#home">Home</a>
+                </li>
+                <li class="nav-item mb-3 mb-lg-0">
+                  <a class="nav-link" href="#shop">shop</a>
+                </li>
+                <li class="nav-item mb-3 mb-lg-0">
+                  <a class="nav-link" href="#pages">pages</a>
+                </li>
+                <li class="nav-item mb-3 mb-lg-0">
+                  <a class="nav-link" href="#about us">about us</a>
+                </li>
+                <li class="nav-item mb-3 mb-lg-0">
+                  <a class="nav-link" href="#lookups">lookups</a>
+                </li>
+                <li class="nav-item d-block d-lg-none mb-3 mb-lg-0 user-link">
+                  <a class="nav-link" href="#login">Login</a>
+                </li>
+              </ul>
+              <div class="icons d-none d-md-flex">
+                <div class="icon">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="icon">
+                  <i class="fa-regular fa-user user-icon"></i>
+                </div>
+                <div class="icon">
+                  <i class="fa-regular fa-bell"> <span></span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- ====== end of Header ====== -->
+    <!-- ====== home ====== -->
+    <section class="home">
+      <div class="container">
+        <div
+          class="row flex-column flex-lg-row align-items-center justify-content-center"
+        >
+          <div class="col home-content text-center text-lg-start mt-5 mt-md-0">
+            <h4>Limited Time Only For Winter</h4>
+            <h1>fash<span>i</span>on</h1>
+            <h3>LOOK YOUR BEST ON YOUR BEST DAY</h3>
+            <button class="btn">explore now!</button>
+          </div>
+          <div class="col home-img d-none d-md-block">
+            <img src="./images/woman-in-cart.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== end of home ====== -->
+    <!-- ====== Collection ====== -->
+
+    <section class="section collection">
+      <span>COLLECTION</span>
+      <h2>Our Top Collection</h2>
+      <div class="products-collection">
+        <button data-filter="Jewellery">Jewellery</button>
+        <button data-filter="Accessories">Accessories</button>
+        <button data-filter="Dresses">Dresses</button>
+        <button data-filter="Footwear">Footwear</button>
+      </div>
+      <div class="container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper" id="wrapper">
+            <!-- <div class="swiper-slide">
+              <div class="pro-img">
+                <img src="./images/product-1.png" alt="" class="img-fluid" />
+                <i class="fa fa-heart"></i>
+              </div>
+              <div class="pro-info">
+                <h3>nile air pod</h3>
+                <div class="pro-footer">
+                  <span>$300</span>
+                  <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== end of Collection ====== -->
+
+    <!-- ====== New Arrival ====== -->
+    <section class="section newArrival">
+      <span>NEW ARRIVAL</span>
+      <h2>Latest Collection</h2>
+      <div class="container px-0 px-lg-5">
+        <div class="row d-block d-lg-grid">
+          <div class="col col-1">
+            <img src="./images/poster-1.png" alt="" />
+            <h3>
+              2021 Trends <br />
+              Women’s Smart Skirt
+            </h3>
+          </div>
+          <div class="col col-2">
+            <img src="./images/poster-2.png" alt="" />
+            <h3>
+              2021 Trends <br />
+              Women’s Smart Skirt
+            </h3>
+          </div>
+          <div class="col col-3">
+            <img src="./images/poster-3.png" alt="" />
+            <h3>
+              2021 Trends <br />
+              Women’s Smart Skirt
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== end of New Arrival ====== -->
+
+    <!-- ====== Categories ====== -->
+    <section class="section categories">
+      <span>categories</span>
+      <h2>2023 Latest Collection</h2>
+      <div class="container">
+        <div class="row" id="categories-cards">
+          <!-- <div class="col categories-card">
+            <i class="fa fa-heart"></i>
+            <div class="pro-img">
+              <img src="./images/product-1.png" alt="" class="img-fluid" />
+            </div>
+            <div class="pro-info">
+              <div class="pro-content">
+                <h3>nile air pod</h3>
+                <button class="btn">add to cart</button>
+              </div>
+              <div class="pro-footer">
+                <span>$300</span>
+                <div class="stars">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+        <button class="btn load-btn">load more</button>
+      </div>
+    </section>
+    <!-- ====== end of Categories ====== -->
+    <!-- ====== Statistics ====== -->
+    <section class="section statistics">
+      <span>STATS</span>
+      <h2>Our Statistics</h2>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col col-12 col-lg-3 col-md-6">
+            <div class="icon">
+              <i class="fa-regular fa-square-check"></i>
+            </div>
+            <h3>Easy Order System</h3>
+            <p>
+              Lorem Ispum is a placeholder text commomly used as a free text.
+            </p>
+          </div>
+          <div class="col col-12 col-lg-3 col-md-6">
+            <div class="icon">
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <h3>On Time Delievery</h3>
+            <p>
+              Lorem Ispum is a placeholder text commomly used as a free text.
+            </p>
+          </div>
+          <div class="col col-12 col-lg-3 col-md-6">
+            <div class="icon">
+              <i class="fa-solid fa-sack-dollar"></i>
+            </div>
+            <h3>Money Back Gaurantee</h3>
+            <p>
+              Lorem Ispum is a placeholder text commomly used as a free text.
+            </p>
+          </div>
+          <div class="col col-12 col-lg-3 col-md-6">
+            <div class="icon">
+              <i class="fa-solid fa-headset"></i>
+            </div>
+            <h3>24/7 Customer Support</h3>
+            <p>
+              Lorem Ispum is a placeholder text commomly used as a free text.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== end of Statistics ====== -->
+
+    <!-- ====== Blogs ====== -->
+    <section class="section blog">
+      <span>BLOGS</span>
+      <h2>Latest News</h2>
+      <div class="container">
+        <div class="row g-5">
+          <div class="col">
+            <div class="img">
+              <img src="./images/blog-1.png" alt="" class="img-fluid" />
+            </div>
+            <h4>Trendy</h4>
+            <h3>
+              Lorem Ispum is a placeholder text commomly used as a free text.
+            </h3>
+            <p>10 January 2021</p>
+          </div>
+          <div class="col">
+            <div class="img">
+              <img src="./images/blog-2.png" alt="" class="img-fluid" />
+            </div>
+            <h4>Trendy</h4>
+            <h3>
+              Lorem Ispum is a placeholder text commomly used as a free text.
+            </h3>
+            <p>10 January 2021</p>
+          </div>
+          <div class="col">
+            <div class="img">
+              <img src="./images/blog-3.png" alt="" class="img-fluid" />
+            </div>
+            <h4>Trendy</h4>
+            <h3>
+              Lorem Ispum is a placeholder text commomly used as a free text.
+            </h3>
+            <p>10 January 2021</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== end of Blogs ====== -->
+
+    <!-- ====== Footer ====== -->
+    <section class="section footer">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <img src="./images/logo.svg" alt="" class="img-fluid" />
+            <p>
+              Lorem ispum is a placeholder text commonly used as a free text.
+            </p>
+            <div class="social">
+              <i class="fa fa-facebook"></i>
+              <i class="fa fa-twitter"></i>
+              <i class="fa fa-instagram"></i>
+              <i class="fa fa-youtube"></i>
+            </div>
+            <h4>
+              Copyrights 2023;<br />
+              Mohsen
+            </h4>
+          </div>
+          <div class="col">
+            <h3>product</h3>
+            <div class="list">
+              <a href="">download</a>
+              <a href="">pricing</a>
+              <a href="">location</a>
+              <a href="">server</a>
+              <a href="">blog</a>
+            </div>
+          </div>
+          <div class="col">
+            <h3>category</h3>
+            <div class="list">
+              <a href="">men</a>
+              <a href="">women</a>
+              <a href="">kids</a>
+              <a href="">best seller</a>
+              <a href="">new arrivals</a>
+            </div>
+          </div>
+          <div class="col">
+            <h3>category</h3>
+            <div class="list">
+              <a href="">my account</a>
+              <a href="">discount</a>
+              <a href="">returns</a>
+              <a href="">order history</a>
+              <a href="">order tracking</a>
+            </div>
+          </div>
+          <div class="col">
+            <h3>contact us</h3>
+            <div class="list">
+              <div class="contact-item">
+                <div class="icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <span>iran , shiraz</span>
+              </div>
+              <div class="contact-item">
+                <div class="icon">
+                  <i class="fa fa-envelope"></i>
+                </div>
+                <span style="white-space: wrap"
+                  >3mohsenfaramarzi@gmail.com</span
+                >
+              </div>
+              <div class="contact-item">
+                <div class="icon">
+                  <i class="fa fa-phone"></i>
+                </div>
+                <span>+0000 111 222</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== end of Footer ====== -->
+
+    <!-- ====== Login and Signup Form ====== -->
+    <div class="user-form">
+      <div class="close-form d-flex"><i class="fa fa-close"></i></div>
+      <div class="form-wrapper container">
+        <div class="user login">
+          <div class="img-box">
+            <img src="./images/login.svg" alt="" />
+          </div>
+          <div class="form-box">
+            <div class="top">
+              <p>
+                Not a member?
+                <span data-id="#ff0066">Register now</span>
+              </p>
+            </div>
+            <form action="">
+              <div class="form-control">
+                <h2>Hello Again!</h2>
+                <p>Welcome back you've been missed.</p>
+                <input type="text" placeholder="Enter Username" />
+                <div>
+                  <input type="password" placeholder="Password" />
+                  <div class="icon form-icon"></div>
+                </div>
+                <span>Recovery Password</span>
+                <input type="Submit" value="Login" />
+              </div>
+              <div class="form-control">
+                <p>Or continue with</p>
+                <div class="icons">
+                  <div class="icon">
+                    <img src="./images/search.svg" alt="" />
+                  </div>
+                  <div class="icon">
+                    <img src="./images/apple.svg" alt="" />
+                  </div>
+                  <div class="icon">
+                    <img src="./images/facebook.svg" alt="" />
+                  </div>
+                  <div class="icon">
+                    <img src="./images/github.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Register -->
+        <div class="user signup">
+          <div class="form-box">
+            <div class="top">
+              <p>
+                Already a member?
+                <span data-id="#1a1aff">Login now</span>
+              </p>
+            </div>
+            <form action="">
+              <div class="form-control">
+                <h2>Welcome Codevo!</h2>
+                <p>It's good to have you.</p>
+                <input type="email" placeholder="Enter Email" />
+                <div>
+                  <input type="password" placeholder="Password" />
+                  <div class="icon form-icon">
+                    <img src="./images/eye.svg" alt="" />
+                  </div>
+                </div>
+                <div>
+                  <input type="password" placeholder="Confirm Password" />
+                  <div class="icon form-icon">
+                    <img src="./images/eye.svg" alt="" />
+                  </div>
+                </div>
+                <input type="Submit" value="Register" />
+              </div>
+              <div class="form-control">
+                <p>Or continue with</p>
+                <div class="icons">
+                  <div class="icon">
+                    <img src="./images/search.svg" alt="" />
+                  </div>
+                  <div class="icon">
+                    <img src="./images/apple.svg" alt="" />
+                  </div>
+                  <div class="icon">
+                    <img src="./images/facebook.svg" alt="" />
+                  </div>
+                  <div class="icon">
+                    <img src="./images/github.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="img-box">
+            <img src="./images/trial.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ====== SwiperJs ====== -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- ====== Bootstrap Js ====== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- ====== Custom Script ====== -->
+    <script src="./js/main.js"></script>
+    <script src="./js/product.js"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+@mixin button() {
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0.8rem 3.5rem;
+  cursor: pointer;
+  border-radius: 0.625rem;
+  background: linear-gradient(180deg, rgba(255, 81, 81, 0.5) 0%, #ff5e3a 100%);
+  color: var(--white-color);
+  border: none;
+  text-transform: capitalize;
+  &:hover {
+    color: var(--white-color);
+  }
+}
+
+@mixin icon() {
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  i{
+    color: var(--white-color);
+  }
+}

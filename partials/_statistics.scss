@@ -1,0 +1,43 @@
+.statistics {
+  padding: 10rem 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(252, 203, 144, 0.15),
+    rgba(255, 185, 188, 0.1)
+  );
+  .container {
+    .row {
+      text-align: center;
+      .col {
+        h3 {
+          font-size: 1.2rem;
+        }
+        p {
+          font-size: 0.8rem;
+        }
+        .icon {
+          width: 7rem;
+          height: 7rem;
+          border-radius: 0.7rem;
+          background-color: var(--white-color);
+          box-shadow: var(--box-shadow-2);
+          margin: 0 auto;
+          display: grid;
+          place-items: center;
+          margin-bottom: 2rem;
+          transition: all 0.2s ease;
+          &:hover {
+            background-color: var(--primary-color);
+          }
+          &:hover i {
+            color: var(--white-color);
+          }
+          i {
+            font-size: 2rem;
+            color: var(--primary-color);
+          }
+        }
+      }
+    }
+  }
+}

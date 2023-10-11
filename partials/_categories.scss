@@ -1,0 +1,117 @@
+.categories {
+  .load-btn {
+    display: block;
+    margin: 0 auto;
+  }
+  .row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    margin-bottom: 2.5rem;
+    .categories-card {
+      position: relative;
+      padding: 0;
+      border-radius: 0.7rem;
+      border: 1px solid var(--grey-color);
+      transition: all 0.3s ease;
+      &:hover {
+        transform: scale(1.07);
+        box-shadow: var(--box-shadow-1);
+      }
+      &:hover .pro-info .pro-content .btn,
+      &:hover > i {
+        opacity: 1;
+      }
+      &:hover .pro-img {
+        background: var(--gradient);
+      }
+      & > i {
+        position: absolute;
+        right: 5%;
+        top: 5%;
+        width: 45px;
+        height: 45px;
+        font-size: 1.5rem;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        color: var(--white-color);
+        background-color: var(--primary-color);
+        transition: all 0.3s ease;
+        opacity: 0;
+      }
+      .pro-img {
+        border-radius: 0.7rem 0.7rem 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 17rem;
+        margin-bottom: 0.5rem;
+        background-color: var(--grey-color);
+        transition: all 0.3s ease;
+        &:hover i {
+          opacity: 1;
+        }
+        img {
+          height: 14rem;
+        }
+      }
+      .pro-info {
+        padding: 1rem;
+        .pro-content {
+          margin-bottom: 1.5rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          h3 {
+            font-size: 1.2rem;
+          }
+          .btn {
+            padding: 0.3rem 0.5rem;
+            transition: all 0.3s ease;
+            opacity: 0;
+            font-size: 0.8rem;
+            white-space: nowrap;
+          }
+        }
+        .pro-footer {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          span {
+            color: var(--white-color);
+            padding: 0.2rem 0.7rem;
+            border-radius: 0.5rem;
+            background-color: var(--primary-color);
+          }
+          .stars {
+            i {
+              color: var(--primary-color);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .categories {
+    .row {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+@media screen and (max-width: 570px) {
+  .categories {
+    .row {
+      grid-template-columns: 1fr;
+      padding: 0 1rem;
+      .categories-card {
+        &:hover {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+}

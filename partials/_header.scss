@@ -1,0 +1,48 @@
+.header {
+  nav {
+    padding: 1rem 0 2rem;
+    .navbar-toggler:focus,
+    .btn-close:focus {
+      box-shadow: none;
+    }
+    .navbar-toggler {
+      border: none;
+    }
+
+    .nav-link {
+      font-size: 1.1rem;
+      font-weight: 500;
+      transition: all 0.2s ease;
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+    .icons {
+      display: flex;
+      align-items: center;
+      column-gap: 1rem;
+      .icon {
+        font-size: 1.3rem;
+        z-index: 10;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        &:hover {
+          color: var(--primary-color);
+        }
+        &:last-child {
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            right: -1%;
+            top: 0;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+          }
+        }
+      }
+    }
+  }
+}

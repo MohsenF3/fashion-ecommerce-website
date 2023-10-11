@@ -1,0 +1,78 @@
+.home {
+  .container {
+    background: url(../images/bg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2rem;
+    position: relative;
+    .row {
+      height: 80vh;
+      .home-content {
+        margin-left: 3rem;
+        h4 {
+          font-size: 1rem;
+          font-weight: 400;
+        }
+        h1 {
+          font-family: var(--second-font);
+          font-size: 7rem;
+          margin-block: 1rem;
+          span {
+            position: relative;
+            color: var(--primary-color);
+            text-transform: lowercase;
+            &::before {
+              content: "ı";
+              position: absolute;
+              color: var(--black-color);
+            }
+          }
+        }
+        h3 {
+          font-size: 1rem;
+          margin-bottom: 3rem;
+          font-weight: 500;
+        }
+      }
+      .home-img {
+        position: absolute;
+        right: -1%;
+        bottom: 0;
+        max-width: 40%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .home {
+    .container {
+      .row {
+        .home-content {
+          margin-left: 0;
+          padding-top: 1.5rem;
+        }
+        .home-img {
+          left: 50%;
+          transform: translateX(-50%);
+          max-width: 45%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 570px) {
+  .home {
+    .container {
+      .row {
+        .home-content {
+          h1 {
+            font-size: 5rem;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+}
